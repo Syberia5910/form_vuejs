@@ -5,7 +5,7 @@
       <select name="section" id="section" v-model="section">
         <option v-for="section in sections" :value="section">{{ section }}</option>
       </select><br>
-      <button @click="addToList">Ajouter</button>
+      <button @click="addToList" id="adding">Ajouter</button>
     </div>
 </template>
 
