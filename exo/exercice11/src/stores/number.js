@@ -1,7 +1,7 @@
 import { defineStore } from "pinia"
 import { ref } from 'vue'
 
-export const useNumberStore = defineStore('store:number', () => {
+export const useNumberStore = defineStore('number', () => {
     const nb1 = ref(2)
     const nb2 = ref(4)
     const sum2Number = (n1, n2) => {

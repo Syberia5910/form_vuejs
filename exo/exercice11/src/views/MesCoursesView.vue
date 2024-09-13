@@ -16,6 +16,8 @@
             Aucun élément ajouté à votre liste de course
         </p>
     </div>
+  
+    <p>NB 1 depuis le store : {{ mystore.nb1 }}</p>
 </template>
 
 <script setup>
@@ -40,6 +42,11 @@
             emits('buyArticle', index, { "buyed": true } )
         }
     }
+    
+    // store
+    import { useNumberStore } from '@/stores/number.js'
+
+    const mystore = useNumberStore()
 </script>
 
 <style>

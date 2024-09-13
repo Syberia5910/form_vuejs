@@ -16,13 +16,10 @@
             Aucun élément ajouté à votre liste de course
         </p>
     </div>
-
-    
-  <p>NB 1 depuis le store : {{  store.nb1 }}</p>
 </template>
 
 <script setup>
-    import { computed, defineProps, defineEmits } from 'vue'
+    import { computed } from 'vue'
 
     const emits = defineEmits(['buyArticle'])
 
@@ -47,11 +44,6 @@
             emits('buyArticle', index, { "buyed": true } )
         }
     }
-    
-    // store
-    import { useNumberStore } from '@/stores/number.js'
-
-    const store = useNumberStore()
 </script>
 
 <style>

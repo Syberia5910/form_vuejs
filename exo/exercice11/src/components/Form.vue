@@ -10,7 +10,7 @@
 
 <script setup>
     // Import 
-    import { ref, defineProps, defineEmits } from 'vue'
+    import { ref } from 'vue'
 
     const emits = defineEmits(['returnForAddingToList'])
     const article = ref(null)

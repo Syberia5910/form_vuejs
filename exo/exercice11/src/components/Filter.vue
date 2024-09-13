@@ -10,7 +10,7 @@
 
 <script setup>
     // Import 
-    import { ref, defineProps, defineEmits, watchEffect } from 'vue'
+    import { ref, watchEffect } from 'vue'
 
     const emits = defineEmits(['sendFilter'])
 
