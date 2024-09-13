@@ -6,7 +6,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 
 const app = createApp(App)
-const router = createRouter(() => {
+const router = createRouter({
     // Choix du mode naviguation
     // CreatewebHistory :  classique
     // createWebHashHistory : Naviguation avec des ancres
@@ -29,7 +29,7 @@ const router = createRouter(() => {
             name: "Contact",
             component: () => import('@/views/ContactView.vue') // Cette écriture permet de ne charger la page qu'en cas d'appel
         }
-    ];
+    ]
 })
 app.use(router)
 app.mount('#app')
